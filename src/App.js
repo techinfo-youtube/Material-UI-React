@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Typography, AppBar, Toolbar, Tabs, Tab } from "@mui/material";
+import DrawerMenu from "./components/DrawerMenu";
+import ResponsiveGrid from "./components/ResponsiveGrid";
 
+// import Modals from "./components/Modals";
 // import Form from "./components/Form";
+// import Cards from "./components/Cards";
+// import Containers from "./components/Containers";
+// import ListsComponent from "./components/ListsComponent";
+// import Accord from "./components/Accord";
 
 function App() {
   const [value, setValue] = useState(0);
   return (
-    <div>
+    <>
       <AppBar>
         <Toolbar>
           <Typography variant="h4">LOGO</Typography>
@@ -24,7 +31,16 @@ function App() {
         </Toolbar>
       </AppBar>
       {/* <Form /> */}
-    </div>
+      <div style={{ marginTop: 100 }}>
+        {/* <Cards /> */}
+        {/* <Modals /> */}
+        {/* <Containers /> */}
+        {/* <ListsComponent /> */}
+        {/* <Accord /> */}
+        {/* <DrawerMenu /> */}
+        <ResponsiveGrid />
+      </div>
+    </>
   );
 }
 
